@@ -16,6 +16,28 @@ body {
 
 /* Containers */
 
+nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 3em;
+    line-height: 3em;
+    padding: 0 2em;
+    display: flex;
+}
+
+nav p {
+    margin-left: auto;
+}
+
+nav a {
+    margin-left: 0.5em;
+    color: rgb(0, 115, 255);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(125, 125, 125);
+}
+
 #container {
     display: flex;
     justify-content: center;
