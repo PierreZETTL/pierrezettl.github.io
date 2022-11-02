@@ -76,6 +76,7 @@ footer {
     width: 58em;
     height: 3em;
     transition: transform 0.3s;
+    text-align: center;
 }
 
 footer:hover {
