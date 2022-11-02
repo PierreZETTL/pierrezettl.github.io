@@ -40,7 +40,7 @@ body {
 }
 
 .long {
-    width: 39em;
+    width: 38em;
     height: 18em;
     transition: transform 0.3s;
 }
@@ -50,7 +50,7 @@ body {
 }
 
 footer {
-    width: 59em;
+    width: 58em;
     height: 3em;
     transition: transform 0.3s;
 }
