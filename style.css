@@ -10,6 +10,8 @@
 
 body {
     background: linear-gradient(75deg, rgb(0, 160, 170), rgb(0, 190, 65));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* Containers */
@@ -146,7 +148,7 @@ p {
     }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1000px) {
     .long {
         width: 18em;
         height: 18em;
