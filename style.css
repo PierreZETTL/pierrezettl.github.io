@@ -18,9 +18,8 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 2.5em;
-    margin-left: 5em;
-    margin-right: 5em;
+    margin: 2.5em auto;
+    max-width: 75em;
 }
 
 #container section, #container footer {
