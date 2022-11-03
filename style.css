@@ -27,6 +27,7 @@ nav {
     display: flex;
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(25px);
+    z-index: 1;
 }
 
 nav h3 {
