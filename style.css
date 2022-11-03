@@ -17,11 +17,20 @@ body {
 /* Containers */
 
 nav {
-    background-color: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
     height: 3em;
     line-height: 3em;
-    padding: 0 2em;
+    padding: 0 1em;
     display: flex;
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
+}
+
+nav h3 {
+    color: white;
 }
 
 nav p {
@@ -29,53 +38,64 @@ nav p {
 }
 
 nav a {
-    margin-left: 0.5em;
-    color: rgb(0, 115, 255);
-    text-decoration: none;
+    margin: 0.5em;
+    transition: transform 0.2s;
 }
 
+
 nav a:hover {
-    color: rgb(125, 125, 125);
+    transform: scale(1.05);
+}
+
+nav a:active {
+    transform: scale(1);
 }
 
 #container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 2.5em auto;
+    margin: 4em auto 0.5em auto;
     max-width: 75em;
 }
 
 #container section, #container footer {
     margin: 1em;
     border-radius: 1em;
-    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.25);
+}
+
+.short, .long {
+    -webkit-user-select: none;     
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .short {
     width: 18em;
     height: 18em;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
 }
 
 .short:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
 }
 
 .long {
     width: 38em;
     height: 18em;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
 }
 
 .long:hover {
-    transform: scale(1.02);
+    transform: scale(1.04);
 }
 
 footer {
     width: 58em;
     height: 3em;
-    transition: transform 0.3s;
+    transition: transform 0.2s;
     text-align: center;
 }
 
@@ -86,20 +106,72 @@ footer:hover {
 /* Content */
 
 .title {
+    display: flex;
     background-color: rgba(255, 255, 255, 0.6);
     height: 4em;
     line-height: 4em;
-    padding: 0 2em 0 2em;
+    padding: 0 0 0 2em;
     border-radius: 1em 1em 0 0;
+}
+
+.title img {
+    border-radius: 0.5em;
+    margin: 0.5em 0.5em 0 -1.5em;
+}
+
+.title p {
+    margin-left: auto;
+}
+
+.title a {
+    margin: 0.5em;
+    transition: transform 0.2s;
+}
+
+.title a:hover {
+    transform: scale(1.05);
+}
+
+.title a:active {
+    transform: scale(1);
+}
+
+.contentimg img {
+    border-radius: 0 0 1em 1em;
+    height: 14em;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contentbg {
+    height: 14em;
+    border-radius: 0 0 1em 1em;
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .content {
     width: 100%;
-    height: 14em;
-    border-radius: 0 0 1em 1em;
-    padding: 1.5em 2em;
-    background-color: rgba(255, 255, 255, 0.95);
+    height: 13em;
+    padding: 1em 2em;
     overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.content::-webkit-scrollbar {
+    width: 8px;
+  }
+.content::-webkit-scrollbar-track {
+    background: transparent;
+}
+.content::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.5);
+    border: transparent;
+}
+.content::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(155, 155, 155, 0.8);
+    border: transparent;
 }
 
 .contentfull {
@@ -108,7 +180,7 @@ footer:hover {
     border-radius: 1em;
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.6);
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .footer {
@@ -119,6 +191,8 @@ footer:hover {
     line-height: 3em;
     background-color: rgba(255, 255, 255, 0.6);
     overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 /* Text */
@@ -130,8 +204,8 @@ h1 {
 }
 
 h2 {
-    font-size: medium;
-    font-weight: 300;
+    font-size: large;
+    font-weight: 400;
     color: black;
 }
 
@@ -143,7 +217,7 @@ h3 {
 
 p {
     font-size: medium;
-    font-weight: 300;
+    font-weight: 400;
     color: black;
 }
 
@@ -157,8 +231,8 @@ p {
     .title {
         background-color: rgba(0, 0, 0, 0.5);
     }
-    
-    .content {
+
+    .contentbg {
         background-color: rgba(0, 0, 0, 0.75);
     }
 
@@ -168,6 +242,10 @@ p {
 
     body {
         background: linear-gradient(75deg, rgb(0, 110, 170), rgb(0, 140, 65));
+    }
+
+    :root {
+        color-scheme: dark;
     }
 }
 
