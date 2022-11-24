@@ -94,17 +94,6 @@ nav, footer, .short, .long {
     transform: scale(1.04);
 }
 
-footer {
-    width: 58em;
-    height: 3em;
-    transition: transform 0.2s;
-    text-align: center;
-}
-
-footer:hover {
-    transform: scale(1.02);
-}
-
 /* Content */
 
 .title {
@@ -185,16 +174,15 @@ footer:hover {
     overflow: hidden;
 }
 
-.footer {
+footer {
+    margin-top: 5em;
+    height: 3em;
     width: 100%;
-    height: 100%;
-    border-radius: 1em;
-    padding: 0 2em;
+    padding-left: 20%;
+    padding-right: 20%;
+    background-color: rgba(255, 255, 255, 0.95);
     line-height: 3em;
-    background-color: rgba(255, 255, 255, 0.6);
-    overflow: scroll;
-    overflow-x: auto;
-    overflow-y: auto;
+    text-align: center;
 }
 
 /* Text */
@@ -217,6 +205,12 @@ h3 {
     color: black;
 }
 
+h4 {
+    font-size: small;
+    font-weight: 400;
+    color: black;
+}
+
 p {
     font-size: medium;
     font-weight: 400;
@@ -226,7 +220,7 @@ p {
 /* Medias */
 
 @media (prefers-color-scheme: dark) {
-    h1, h2, h3, p {
+    h1, h2, h3, h4, p {
         color: white;
     }
 
@@ -234,11 +228,11 @@ p {
         background-color: rgba(0, 0, 0, 0.5);
     }
 
-    .contentbg {
+    .contentbg, footer {
         background-color: rgba(0, 0, 0, 0.75);
     }
 
-    .contentfull, .footer, nav {
+    .contentfull, nav {
         background-color: rgba(0, 0, 0, 0.5);
     }
 
@@ -260,9 +254,5 @@ p {
     .long {
         width: 18em;
         height: 18em;
-    }
-
-    footer {
-        width: 39em;
     }
 }
