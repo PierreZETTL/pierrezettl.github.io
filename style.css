@@ -64,6 +64,10 @@ body {
     text-align: center;
 }
 
+#mobileNavButton svg {
+    vertical-align: top;
+}
+
 #mobileNavButton:hover {
     background-color: lightgray;
     cursor: pointer;
