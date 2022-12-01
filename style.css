@@ -60,12 +60,8 @@ body {
 #mobileNavButton {
     display: none;
     border-radius: 0.25rem;
-    padding: 0.25em;
+    padding: 0.25rem 0.25rem 0.10rem 0.25rem;
     text-align: center;
-}
-
-#mobileNavButton svg {
-    vertical-align: top;
 }
 
 #mobileNavButton:hover {
@@ -123,7 +119,7 @@ body {
 #socialBtns a {
     display: inline-block;
     text-align: center;
-    padding: 0.5em;
+    padding: 0.5rem;
     border-radius: 0.25rem;
     color: inherit;
 }
