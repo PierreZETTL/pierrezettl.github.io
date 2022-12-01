@@ -25,16 +25,43 @@ body {
     color: black;
 }
 
-#navbar a {
+#navMobile {
+    display: none;
+    margin-left: -1.5rem;
+}
+
+#navMobile a {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#navMobile li {
+    width: 10rem;
+    margin-bottom: 1.5rem;
+}
+
+#mobileNavButton {
+    display: none;
+    border-radius: 0.25rem;
+    padding: 0.5em;
+    text-align: center;
+}
+
+#mobileNavButton:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+#navbar a, #navMobile a {
     text-decoration: none;
     color: inherit;
 }
 
-#navbar a:visited {
+#navbar a:visited, #navMobile a:visited {
     color: inherit;
 }
 
-#navbar a:hover {
+#navbar a:hover, #navMobile a:hover {
     color: gray;
 }
 
@@ -54,7 +81,7 @@ body {
     font-weight: 400;
 }
 
-#navItems ul {
+#navItems ul, #navMobile ul {
     list-style-type: none;
 }
 
@@ -192,5 +219,19 @@ footer {
 @media (min-width: 1100px) {
     .appContainer {
         max-width: 450px;
+    }
+}
+
+@media (max-width: 750px) {
+    #navItems {
+        display: none;
+    }
+
+    #navbar #socialBtns {
+        display: none;
+    }
+
+    #mobileNavButton {
+        display: block;
     }
 }
