@@ -156,21 +156,21 @@ svg {
 
 .contentContainer h3 {
     text-align: left;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
 .contentContainer p {
     width: 100%;
     text-align: left;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 300;
 }
 
 #aboutContainer {
     width: 90%;
     max-width: 650px;
-    line-height: 2rem;
+    line-height: 2.5rem;
     margin-top: -2rem;
 }
 
@@ -245,8 +245,24 @@ svg {
     background-color: rgb(220, 250, 255);
 }
 
+.appStoreLink {
+    width: 100%;
+    text-align: center;
+    margin-top: -1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.appStoreLink img {
+    width: 12rem;
+    border-radius: 0.6rem !important;
+}
+
 .appDetailsImg {
-    margin: 2rem 1rem 2rem 2rem;
+    margin: 1rem 2rem 1rem 2rem;
     border-radius: 2rem;
     width: 12rem;
     box-shadow: 0rem 0rem 0.15rem rgba(0, 0, 0, 0.25);
@@ -256,7 +272,7 @@ svg {
     width: 100%;
     text-align: center;
     margin-top: -2rem;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 300;
 }
 
@@ -264,7 +280,7 @@ svg {
     width: 100%;
     text-align: center;
     margin-bottom: 5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     text-decoration: none;
     color: rgb(35, 100, 235);
