@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
         <title>Pierre ZETTL</title>
     </head>
-    <body>
+    <body onload="checkLang()">
         <div class="wrapper">
             <div id="navbarContainer">
                 <div id="navbar">
@@ -72,6 +72,19 @@
         </div>
     </body>
     <script>
+        function checkLang() {
+            var userLang = "";
+            if (navigator.language != null) {
+                userLang = navigator.language;
+            } else if (navigator.userLanguage != null) {
+                userLang = navigator.userLanguage;
+            }
+            
+            if (!userLang.startsWith("fr")) {
+                window.location.href = "en/index.html"
+            }
+        };
+
         function toggleMobileNav() {
             if (document.getElementById("navMobile").style.display === "block") {
                 document.getElementById("navMobile").style.display = "none";

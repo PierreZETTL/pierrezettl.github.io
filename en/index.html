@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>À propos - Pierre ZETTL</title>
+        <link rel="stylesheet" href="../style.css">
+        <title>Pierre ZETTL</title>
     </head>
     <body onload="checkLang()">
         <div class="wrapper">
             <div id="navbarContainer">
                 <div id="navbar">
-                    <a id="mainTitle" href="index.html">Pierre ZETTL</a>
+                    <a id="mainTitle" href="index.html">📌</a>
                     <div id="navZone">
                         <nav id="navItems">
                             <ul>
                                 <li><a href="apps.html">Apps</a></li>
-                                <li><a class="activeNav" href="about.html">À propos</a></li>
+                                <li><a href="about.html">About</a></li>
                             </ul>
                         </nav>
                         <div id="socialBtns">
@@ -40,7 +40,7 @@
                 <nav id="navMobile">
                     <ul>
                         <li><a href="apps.html">Apps</a></li>
-                        <li><a class="activeNav" href="about.html">À propos</a></li>
+                        <li><a href="about.html">About</a></li>
                         <br>
                         <li><a href="https://github.com/PierreZETTL" target="_blank">GitHub ></a></li>
                         <li><a href="https://www.linkedin.com/in/pierrezettl/" target="_blank">LinkedIn ></a></li>
@@ -49,18 +49,12 @@
             </div>
             <div class="contentContainer">
                 <div class="content">
-                    <h2>À propos</h2>
-                    <div id="aboutContainer">
-                        <h3>Sous titre</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed pellentesque tortor. Suspendisse nec aliquam ligula. Curabitur commodo consectetur iaculis. Aliquam in mattis lectus. Pellentesque et arcu quis sapien accumsan eleifend. Maecenas convallis risus non euismod laoreet. Pellentesque consectetur non diam eu ultrices. Aliquam erat volutpat. In a diam convallis lorem ornare imperdiet eget nec ligula. Nam dapibus felis non ultrices aliquam. Nulla at iaculis risus. Pellentesque at ultricies est.</p>
-                        <h3>Sous titre</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed pellentesque tortor. Suspendisse nec aliquam ligula. Curabitur commodo consectetur iaculis. Aliquam in mattis lectus. Pellentesque et arcu quis sapien accumsan eleifend. Maecenas convallis risus non euismod laoreet. Pellentesque consectetur non diam eu ultrices. Aliquam erat volutpat. In a diam convallis lorem ornare imperdiet eget nec ligula. Nam dapibus felis non ultrices aliquam. Nulla at iaculis risus. Pellentesque at ultricies est.</p>
-                    </div>
+                    <h2>Pierre ZETTL</h2>
                 </div>
             </div>
             <div id="footerContainer">
                 <footer>
-                    <p>© Tous droits réservés.</p>
+                    <p>© All rights reserved.</p>
                     <div id="socialBtns">
                         <a href="https://github.com/PierreZETTL" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -86,11 +80,11 @@
                 userLang = navigator.userLanguage;
             }
             
-            if (!userLang.startsWith("fr")) {
-                window.location.href = "en/about.html"
+            if (userLang.startsWith("fr")) {
+                window.location.href = "../index.html"
             }
         };
-
+        
         function toggleMobileNav() {
             if (document.getElementById("navMobile").style.display === "block") {
                 document.getElementById("navMobile").style.display = "none";
