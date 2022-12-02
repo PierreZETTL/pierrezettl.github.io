@@ -15,7 +15,7 @@ svg {
 }
 
 #appsBackground {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(248, 250, 252);
 }
 
 #navbarContainer {
@@ -46,7 +46,7 @@ svg {
     justify-content: space-between;
     min-height: 100vh;
     display: none;
-    margin-top: -1rem;
+    margin-top: -0.9rem;
     margin-left: -1.5rem;
     background-color: rgba(255, 255, 255, 1);
 }
@@ -148,9 +148,8 @@ svg {
 .contentContainer h2 {
     width: 100%;
     text-align: center;
-    margin-top: -0.25rem;
     margin-bottom: 3rem;
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     font-weight: 600;
 }
 
@@ -237,12 +236,13 @@ svg {
 .appContainer p {
     display: inline-block;
     font-size: 0.5rem;
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 1rem;
     padding: 0.25rem;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     width: max-content;
-    background-color: rgb(220, 250, 255);
+    color: white;
+    background-color: rgb(0, 0, 15);
 }
 
 .appStoreLink {
@@ -266,6 +266,10 @@ svg {
     border-radius: 2rem;
     width: 12rem;
     box-shadow: 0rem 0rem 0.15rem rgba(0, 0, 0, 0.25);
+}
+
+.appDetailsTitle {
+    margin-top: -0.25rem !important;
 }
 
 .appDetailsSubtitle {
@@ -334,12 +338,12 @@ footer {
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: rgba(0, 0, 0, 1);
+        background-color: rgba(0, 0, 15, 1);
         color: white;
     }
     
     #navbarContainer {
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(50, 50, 65, 0.9);
     }
 
     #navbar {
@@ -347,7 +351,7 @@ footer {
     }
 
     #footerContainer {
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(50, 50, 65, 0.9);
     }
 
     footer {
@@ -359,9 +363,8 @@ footer {
     }
 
     .appDetailsImg {
-        box-shadow: 0rem 0rem 0.15rem rgba(255, 255, 255, 0.25);
+        box-shadow: 0rem 0rem 0.15rem rgba(255, 255, 255, 0.8);
     }
-
 
     .appDetailsLink {
         color: rgb(95, 160, 255);
@@ -376,32 +379,33 @@ footer {
     }
 
     .appContainer {
-        box-shadow: 0rem 0rem 0.25rem rgba(255, 255, 255, 0.25);
-        background-color: black;
+        box-shadow: 0rem 0rem 0.25rem rgba(255, 255, 255, 0.8);
+        background-color: rgba(50, 50, 65, 1);
     }
 
     .appContainer img {
-        box-shadow: 0rem 0rem 0.15rem rgba(255, 255, 255, 0.25);
+        box-shadow: 0rem 0rem 0.15rem rgba(255, 255, 255, 0.8);
     }
 
     .appContainer p {
-        background-color: rgb(125, 145, 255);
+        color: black;
+        background-color: rgb(240, 240, 255);
     }
 
     .appContainer:hover {
-        box-shadow: 0rem 0rem 0.75rem rgba(255, 255, 255, 0.25);
+        box-shadow: 0rem 0rem 0.75rem rgba(255, 255, 255, 0.8);
     }
 
     #appsBackground {
-        background-color: rgb(30, 30, 30);
+        background-color: rgb(3, 5, 7);
     }
 
     #socialBtns a:hover {
-        background-color: rgb(80, 80, 80);
+        background-color: rgb(80, 80, 95);
     }
 
     #mobileNavButton:hover {
-        background-color: rgb(80, 80, 80);
+        background-color: rgb(80, 80, 95);
         cursor: pointer;
     }
     
@@ -410,6 +414,6 @@ footer {
     }
 
     #navMobile {
-        background-color: rgba(0, 0, 0, 1);
+        background-color: rgba(50, 50, 65, 1);
     }
 }
